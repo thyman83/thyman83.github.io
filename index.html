@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock'n'Merge</title>
+  <meta name="description" content="Rock'n'Merge : fusionnez les jetons, brisez les pierres et atteignez 1024. Jeu de réflexion pour Android." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <style>
+    :root {
+      --bg: #1c1a25;
+      --paper: #26232f;
+      --ink: #f4eeff;
+      --muted: #a8a0bd;
+      --accent: #ff8a4c;
+      --line: #3a3650;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; text-align: center; }
+    .icon { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 12px 32px rgb(0 0 0 / 0.45); }
+    h1 { margin: 20px 0 4px; font-size: clamp(2rem, 8vw, 2.8rem); letter-spacing: -0.02em; }
+    .tagline { margin: 0 0 28px; color: var(--muted); font-size: 1.1rem; }
+    section {
+      margin: 0 0 16px;
+      padding: 20px 22px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      text-align: left;
+    }
+    h2 { margin: 0 0 8px; font-size: 1.15rem; }
+    p { margin: 0 0 8px; }
+    ul { margin: 0; padding-left: 20px; }
+    a { color: var(--accent); }
+    mark { background: #ffe08a; color: #1c1a25; padding: 0 3px; border-radius: 3px; }
+    footer { margin-top: 28px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <img class="icon" src="favicon.svg" alt="Icône de Rock'n'Merge : un galet fendu par une lueur de lave" />
+  <h1>Rock'n'Merge</h1>
+  <p class="tagline">Fusionnez les jetons, brisez les pierres, atteignez 1024.<br /><span lang="en">Merge tiles, smash stones, reach 1024.</span></p>
+
+  <section>
+    <h2>Le jeu</h2>
+    <p>
+      Faites glisser les jetons : deux jetons identiques fusionnent. Tous les 8 coups, une pierre bloque la grille ;
+      une fusion juste à côté la brise. Un défi du jour, la même partie pour tous les joueurs.
+    </p>
+    <p>Bientôt disponible sur Google Play.</p>
+  </section>
+
+  <section>
+    <h2>Confidentialité · Privacy</h2>
+    <ul>
+      <li><a href="rocknmerge/confidentialite.html">Politique de confidentialité (français)</a></li>
+      <li><a href="rocknmerge/privacy.html" lang="en">Privacy policy (English)</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact · Éditeur</h2>
+    <p>
+      Rock'n'Merge est édité par <mark>[NOM DE L’ÉDITEUR]</mark>, <mark>[ADRESSE]</mark>.<br />
+      Contact : <mark>[ADRESSE E-MAIL DE CONTACT]</mark>
+    </p>
+  </section>
+
+  <footer>© 2026 <mark>[NOM DE L’ÉDITEUR]</mark></footer>
+</main>
+</body>
+</html>

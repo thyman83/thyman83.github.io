@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cff"/>
+      <stop offset="1" stop-color="#3a1fa8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/><g transform="translate(-102.39999999999998 -102.39999999999998) scale(1.2)">
+  <defs>
+    <linearGradient id="p-stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6d6779"/>
+      <stop offset="1" stop-color="#221f2b"/>
+    </linearGradient>
+    <radialGradient id="p-shine" cx="0.38" cy="0.3" r="0.4">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="p-lava" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff07a"/>
+      <stop offset="1" stop-color="#ff4d1a"/>
+    </radialGradient>
+    <filter id="p-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="p-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="p-rim" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+    <path id="p-blob" d="M 512 290 C 650 286, 760 360, 762 500 C 764 640, 660 734, 512 734
+              C 370 736, 262 650, 262 515 C 262 380, 372 294, 512 290 Z"/>
+    <clipPath id="p-left">
+      <polygon points="200,250 542,250 542,290 492,441 562,548 472,734 472,780 200,780"/>
+    </clipPath>
+    <clipPath id="p-right">
+      <polygon points="542,250 830,250 830,780 472,780 472,734 562,548 492,441 542,290"/>
+    </clipPath>
+  </defs>
+  <ellipse cx="512" cy="765" rx="230" ry="30" fill="#000" opacity="0.35" filter="url(#p-blur)"/>
+  <use href="#p-blob" fill="#ff6a2b" opacity="0.85" filter="url(#p-rim)"
+       transform="translate(512 512) scale(1.09) translate(-512 -512)"/>
+  <use href="#p-blob" fill="url(#p-lava)" filter="url(#p-glow)"
+       transform="translate(512 512) scale(1.02) translate(-512 -512)"/>
+  <g transform="translate(-20 6) rotate(-4 400 512)">
+    <g clip-path="url(#p-left)">
+      <use href="#p-blob" fill="url(#p-stone)"/>
+      <use href="#p-blob" fill="url(#p-shine)"/>
+    </g>
+  </g>
+  <g transform="translate(20 12) rotate(4 624 512)">
+    <g clip-path="url(#p-right)">
+      <use href="#p-blob" fill="url(#p-stone)"/>
+      <use href="#p-blob" fill="url(#p-shine)"/>
+    </g>
+  </g></g>
+</svg>
